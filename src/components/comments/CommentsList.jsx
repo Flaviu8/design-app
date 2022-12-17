@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import iconMessage from "../../../src/message.png"
 import { CommentsListMain, CommentsListTitle, CommentsListPar, ButtonEnhancement, ButtonArrow} from './CommentList.style'
-import axios, { all } from 'axios'
+import axios from 'axios'
 
 export default function CommentsList() {
     const [data, setData] = useState([])

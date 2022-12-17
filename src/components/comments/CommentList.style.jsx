@@ -26,6 +26,11 @@ export const ButtonArrow = styled.div`
             align-items: center;
             justify-content: center;
         } 
+        & button:hover {
+            background-color: blue;
+            color: white;
+            
+        }
         & h4 {
             margin-top: 2em;
         }
