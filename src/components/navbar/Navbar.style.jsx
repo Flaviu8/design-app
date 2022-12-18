@@ -19,6 +19,9 @@ export const NavbarContainer = styled.div `
         cursor: pointer;
         color: white;
     }
+    & button:hover {
+       background-color: blue;
+    }
 
 `;
 
