@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import iconMessage from "../../../src/message.png"
-import { CommentsListMain, CommentsListTitle, CommentsListPar, ButtonEnhancement, ButtonArrow} from './CommentList.style'
+import { CommentsListMain,  CommentsListPar,  ButtonArrow, Messages} from './CommentList.style'
 import axios from 'axios'
 
 export default function CommentsList() {
@@ -32,21 +32,18 @@ export default function CommentsList() {
               <h4>{allData.name}</h4>
             </ButtonArrow>
               <CommentsListPar>
-              <p>{allData.body}</p>
-              <span>
-                <img src={iconMessage} width="30px" height="30px"/>
-                <h4>{allData.id}</h4>
-              </span>
+                  <Messages>
+                    <p>{allData.body}</p>
+                    <img src={iconMessage} width="30px" height="30px"/>
+                    <h4>{allData.id}</h4>
+                  </Messages>
+                <button>
+                   Enhancement
+                </button>
               </CommentsListPar>
               
-              <ButtonEnhancement>
-                <button>
-                Enhancement
-                  </button>
-                  
-                  
-                  </ButtonEnhancement>
-        </CommentsListMain>
+                 
+          </CommentsListMain>
     
         )
     

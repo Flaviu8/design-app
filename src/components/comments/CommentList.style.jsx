@@ -32,7 +32,8 @@ export const ButtonArrow = styled.div`
             
         }
         & h4 {
-            margin-top: 2em;
+          margin-top: 2em;
+          margin-left: 2em;
         }
         & button span {
             font-size: 1.3em;
@@ -50,25 +51,33 @@ export const CommentsListTitle = styled.div `
 `;
 
 export const CommentsListPar = styled.div `
-    display: flex;
-    margin-left: 4em;
-    display: flex;
-    justify-content: space-between;
+    margin-left: 6em;
     & p {
         width: 85%;
         margin-left: 2em;
     }
-    & span {
-        margin-right: 1.3em;
-        display: flex;
-    } & h4 {
-        margin-left: 0.5em;
-    }
+    & button {
+            margin-right: 1em;
+            border-radius: 0.7em;
+            border: none;
+            height: 6vh;
+            width: 8em;
+            cursor: pointer;
+            margin-top: 1.4em;
+            margin-left: 2em;
+            
+        }
+
+        & button:hover {
+            background-color: blue;
+            color: white;
+            
+        }
 
 `;
 
 
-export const ButtonEnhancement =styled.div`
+export const ButtonEnhancement = styled.div`
     margin-left: 6em;
     margin-top: 1em;
 
@@ -89,5 +98,18 @@ export const ButtonEnhancement =styled.div`
             
         }
         
+
+`;
+
+export const Messages = styled.div `
+    display: flex;
+ 
+    & h4 {
+        margin-left: 0.5em;
+    }
+
+    & img {
+        margin-left: 1em;
+    }
 
 `;
